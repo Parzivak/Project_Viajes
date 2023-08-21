@@ -23,12 +23,10 @@ public class ViajeTest {
     @Test
     public void testGetOrigen() {
         System.out.println("getOrigen");
-        Viaje instance = null;
-        String expResult = "";
+        Viaje instance = new ViajeIndividual("Origen", "Destino", 100, new Date(), new Date());
+        String expResult = "Origen";
         String result = instance.getOrigen();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -37,11 +35,10 @@ public class ViajeTest {
     @Test
     public void testSetOrigen() {
         System.out.println("setOrigen");
-        String origen = "";
-        Viaje instance = null;
+        String origen = "Origen";
+        Viaje instance = new ViajeIndividual("", "Destino", 100, new Date(), new Date());
         instance.setOrigen(origen);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        assertEquals(origen, instance.getOrigen());
     }
 
     /**
@@ -50,12 +47,10 @@ public class ViajeTest {
     @Test
     public void testGetDestino() {
         System.out.println("getDestino");
-        Viaje instance = null;
-        String expResult = "";
+        Viaje instance = new ViajeIndividual("Origen", "Destino", 100, new Date(), new Date());
+        String expResult = "Destino";
         String result = instance.getDestino();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -64,11 +59,10 @@ public class ViajeTest {
     @Test
     public void testSetDestino() {
         System.out.println("setDestino");
-        String destino = "";
-        Viaje instance = null;
+        String destino = "Destino";
+        Viaje instance = new ViajeIndividual("Origen", "", 100, new Date(), new Date());
         instance.setDestino(destino);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        assertEquals(destino, instance.getDestino());
     }
 
     /**
@@ -77,12 +71,10 @@ public class ViajeTest {
     @Test
     public void testGetCosto() {
         System.out.println("getCosto");
-        Viaje instance = null;
+        Viaje instance = new ViajeIndividual("Origen", "Destino", 0, new Date(), new Date());
         int expResult = 0;
         int result = instance.getCosto();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -92,10 +84,9 @@ public class ViajeTest {
     public void testSetCosto() {
         System.out.println("setCosto");
         int costo = 0;
-        Viaje instance = null;
+        Viaje instance = new ViajeIndividual("Origen", "Destino", 100, new Date(), new Date());;
         instance.setCosto(costo);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        assertEquals(costo, instance.getCosto());
     }
 
     /**
@@ -104,12 +95,10 @@ public class ViajeTest {
     @Test
     public void testGetFechaSalida() {
         System.out.println("getFechaSalida");
-        Viaje instance = null;
+        Viaje instance = new ViajeIndividual("Origen", "Destino", 100, null, new Date());;
         Date expResult = null;
         Date result = instance.getFechaSalida();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -119,10 +108,9 @@ public class ViajeTest {
     public void testSetFechaSalida() {
         System.out.println("setFechaSalida");
         Date fechaSalida = null;
-        Viaje instance = null;
+        Viaje instance = new ViajeIndividual("Origen", "Destino", 100, new Date(), new Date());;
         instance.setFechaSalida(fechaSalida);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        assertEquals(fechaSalida, instance.getFechaSalida());
     }
 
     /**
@@ -131,12 +119,10 @@ public class ViajeTest {
     @Test
     public void testGetFechaLlegada() {
         System.out.println("getFechaLlegada");
-        Viaje instance = null;
+        Viaje instance = new ViajeIndividual("Origen", "Destino", 100, new Date(),null);
         Date expResult = null;
         Date result = instance.getFechaLlegada();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -146,10 +132,9 @@ public class ViajeTest {
     public void testSetFechaLlegada() {
         System.out.println("setFechaLlegada");
         Date fechaLlegada = null;
-        Viaje instance = null;
+        Viaje instance = new ViajeIndividual("Origen", "Destino", 100, new Date(), new Date());
         instance.setFechaLlegada(fechaLlegada);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        assertEquals(fechaLlegada, instance.getFechaLlegada());
     }
 
     /**
@@ -158,12 +143,10 @@ public class ViajeTest {
     @Test
     public void testDescripcion() {
         System.out.println("descripcion");
-        Viaje instance = null;
-        String expResult = "";
+        Viaje instance = new ViajeIndividual("Origen", "Destino", 100, new Date(), new Date());
+        String expResult ="Bienvenido a su viaje personal :D";
         String result = instance.descripcion();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -172,12 +155,10 @@ public class ViajeTest {
     @Test
     public void testCualquierMetodo() {
         System.out.println("cualquierMetodo");
-        Viaje instance = null;
-        String expResult = "";
+        Viaje instance = new ViajeIndividual("Origen", "Destino", 100, new Date(), new Date());
+        String expResult = "Cualquier método implementado en la clase base";
         String result = instance.cualquierMetodo();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -186,12 +167,10 @@ public class ViajeTest {
     @Test
     public void testCualquierMetodo2() {
         System.out.println("cualquierMetodo2");
-        Viaje instance = null;
-        String expResult = "";
+        Viaje instance = new ViajeIndividual("Origen", "Destino", 100, new Date(), new Date());
+        String expResult ="Cualquier método implementado en la clase base ";
         String result = instance.cualquierMetodo2();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     public class ViajeImpl extends Viaje {
