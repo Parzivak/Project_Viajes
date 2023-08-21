@@ -4,8 +4,9 @@
  */
 package Control;
 
-import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
+import java.util.Date;
+import org.junit.Test;
+import static org.junit.Assert.*;
 
 /**
  *
@@ -22,12 +23,11 @@ public class ViajeTodoIncluidoTest {
     @Test
     public void testDescripcion() {
         System.out.println("descripcion");
-        ViajeTodoIncluido instance = null;
-        String expResult = "";
+        ViajeTodoIncluido instance = new ViajeTodoIncluido("Origen", "Destino", 100, new Date(), new Date());
+        String expResult = "Bienvenido a su viaje todo incluido, pasala bien :D";
         String result = instance.descripcion();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        
     }
     
 }
