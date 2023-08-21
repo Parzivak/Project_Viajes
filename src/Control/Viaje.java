@@ -19,6 +19,8 @@ public abstract class Viaje {
     protected Date fechaLlegada;
     
     // Constructores, getters y setters
+    
+
     public Viaje(String origen, String destino, int costo, Date fechaSalida, Date fechaLlegada) {
         this.origen = origen;
         this.destino = destino;
@@ -72,7 +74,7 @@ public abstract class Viaje {
     public abstract String descripcion();
 
     public String cualquierMetodo() {
-        return "Cualquier método implementado en la clase base ";
+        return "Cualquier método implementado en la clase base";
     }
 
     public String cualquierMetodo2() {

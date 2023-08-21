@@ -12,13 +12,14 @@ import java.util.Date;
  */
 public class ViajeIncentivo extends Viaje{
     //Atributos
-    private String empresa;
+    private String empresa="";
 
     //Constructor
     public ViajeIncentivo(String origen, String destino, int costo, Date fechaSalida, Date fechaLlegada, String empresa) {
         super(origen, destino, costo, fechaSalida, fechaLlegada);
         this.empresa=empresa;
     }
+    
     
      //Metodo sobreescrito de la clase padre VIAJE
     @Override
